@@ -21,7 +21,10 @@ const Navbar = () => {
         }`}>ECHOES</h1>
 
         {/* Menu Button - keep it on the right */}
-        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="relative w-8 h-6 flex flex-col justify-between z-50">
+        <button 
+          onClick={() => setIsMenuOpen(!isMenuOpen)} 
+          className="relative w-8 h-6 flex flex-col justify-between z-50 transform active:scale-90 transition-transform duration-150"
+        >
           {isMenuOpen ? (
             <>
               <span className="block w-11.5 h-1 bg-white rounded transition-transform duration-300 relative -left-[1rem]"></span>
