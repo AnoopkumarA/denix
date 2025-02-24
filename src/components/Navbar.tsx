@@ -9,15 +9,18 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`flex justify-between items-center px-6 py-4  fixed w-full z-50 transition-colors duration-300 ${
+      <nav className={`flex justify-between items-center px-6 py-4 fixed w-full z-50 transition-colors duration-300 ${
         isMenuOpen ? 'bg-[#DF835B]' : 'bg-white'
       }`}>
-        {/* Logo */}
-        <h1 className={`text-2xl font-bold tracking-wide ${
+        {/* Empty div for spacing */}
+        <div className="w-8"></div>
+
+        {/* Centered Logo */}
+        <h1 className={`text-3xl font-semibold tracking-wide absolute left-1/2 transform -translate-x-1/2 ${
           isMenuOpen ? 'text-white' : 'text-black'
         }`}>ECHOES</h1>
 
-        {/* Custom Menu Icon */}
+        {/* Menu Button - keep it on the right */}
         <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="relative w-8 h-6 flex flex-col justify-between z-50">
           {isMenuOpen ? (
             <>
