@@ -9,27 +9,24 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`flex justify-between items-center px-6 py-4 fixed w-full z-50 transition-colors duration-300 ${
+      <nav className={`flex justify-between items-center px-6 py-4 fixed w-full z-[100] transition-colors duration-300 ${
         isMenuOpen ? 'bg-[#DF835B]' : 'bg-white'
       }`}>
         {/* Empty div for spacing */}
         <div className="w-8"></div>
 
         {/* Centered Logo */}
-        <h1 className={`text-3xl font-semibold tracking-wide absolute left-1/2 transform -translate-x-1/2 ${
+        <h1 className={`text-3xl font-semibold tracking-wide absolute left-1/2 transform -translate-x-1/2  ${
           isMenuOpen ? 'text-white' : 'text-black'
         }`}>ECHOES</h1>
 
         {/* Menu Button - keep it on the right */}
-        <button 
-          onClick={() => setIsMenuOpen(!isMenuOpen)} 
-          className="relative w-8 h-6 flex flex-col justify-between z-50 transform active:scale-90 transition-transform duration-150"
-        >
+        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="relative w-8 h-6 flex flex-col justify-between z-50">
           {isMenuOpen ? (
             <>
-              <span className="block w-11.5 h-1 bg-white rounded transition-transform duration-300 relative -left-[1rem]"></span>
+              <span className="block w-6 h-1 bg-white rounded transition-transform duration-300 relative -left-[1rem]"></span>
               <span className="block w-8 h-1 bg-white rounded transition-transform duration-300 relative -left-[0.9rem]"></span>
-              <span className="block w-6 h-1 bg-white rounded transition-transform duration-300 relative -left-[0.8rem]"></span>
+              <span className="block w-11.5 h-1 bg-white rounded transition-transform duration-300 relative -left-[0.8rem]"></span>
             </>
           ) : (
             <>
@@ -43,7 +40,7 @@ const Navbar = () => {
 
       {/* Full-screen Menu Overlay */}
       <div
-        className={`fixed inset-0 bg-[#DF835B] transition-all duration-300 ease-in-out ${
+        className={`fixed inset-0 bg-[#DF835B] transition-all duration-300 ease-in-out z-[90] ${
           isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
