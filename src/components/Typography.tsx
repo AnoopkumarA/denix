@@ -1,8 +1,10 @@
 const UniqueProcess = () => {
   return (
-    <div className="max-w-5xl  mx-auto px-11.5 flex items-center justify-between space-x-10 mt-24">
+    <div className="relative max-w-5xl mx-auto px-11.5 flex items-center justify-between space-x-10 mt-24">
+      
+
       {/* Left - Large Text */}
-      <div className="text-[3.87rem] font-serif  leading-tight">
+      <div className="text-[3.8rem] font-serif leading-tight space-y-1.5">
         <p>
           Be <span className="text-[#7A2C0A] underline">Unique</span>
         </p>
@@ -13,7 +15,7 @@ const UniqueProcess = () => {
       </div>
 
       {/* Right - Description */}
-      <div className="max-w-[35rem] font-serif  text-base leading-relaxed">
+      <div className="max-w-[35rem] font-serif text-sm leading-relaxed">
         <p>
           At <strong>ECHOES</strong>, we create spaces that resonate with purpose and authenticity.
           Blending creativity with functionality, we craft interiors that inspire, connect, and

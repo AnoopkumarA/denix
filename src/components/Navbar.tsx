@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="w-8"></div>
 
         {/* Centered Logo */}
-        <h1 className={`text-3xl font-semibold tracking-wide absolute left-1/2 transform -translate-x-1/2  ${
+        <h1 className={`text-[2.3rem] font-semibold tracking-wide absolute left-1/2 transform -translate-x-1/2  ${
           isMenuOpen ? 'text-white' : 'text-black'
         }`}>ECHOES</h1>
 

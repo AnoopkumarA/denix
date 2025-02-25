@@ -1,4 +1,5 @@
 import Gallery from "../components/Gallery";
+import PhotoGallery from "../components/photogallery";
 import UniqueProcess from "../components/Typography"
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
       <div className="pt-20">
         <Gallery />
         <UniqueProcess />
+        <PhotoGallery/>
       </div>
     </div>
   );
