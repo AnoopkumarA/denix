@@ -21,20 +21,20 @@ const GridGallery = () => {
       </div>
 
       {/* First Image */}
-      <div className="relative min-h-[300px]">
+      <div className="relative min-h-[300px] overflow-hidden">
         <img
           src="/7.png"
           alt="Interior Design"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
         />
       </div>
 
       {/* Second Image */}
-      <div className="relative min-h-[300px]">
+      <div className="relative min-h-[300px] overflow-hidden">
         <img
           src="/8.png"
           alt="Interior Design"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
         />
       </div>
 

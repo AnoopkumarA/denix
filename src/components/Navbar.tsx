@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,31 +48,31 @@ const Navbar = () => {
         <div className="flex items-center justify-center h-screen ">
           <ul className="text-center space-y-8 text-black font-semibold">
             <li>
-              <a
-                href="/process"
-                className=" text-[2.6rem] hover:italic hover:font-light transition-colors"
+              <Link
+                to="/process"
+                className="text-[2.6rem] hover:italic hover:font-light transition-colors"
                 onClick={toggleMenu}
               >
                 Process
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/progress"
-                className=" text-[2.6rem]  hover:italic hover:font-light transition-colors"
+              <Link
+                to="/project"
+                className="text-[2.6rem] hover:italic hover:font-light transition-colors"
                 onClick={toggleMenu}
               >
                 Project
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/contact"
-                className=" text-[2.6rem]  hover:italic hover:font-light transition-colors"
+              <Link
+                to="/contact"
+                className="text-[2.6rem] hover:italic hover:font-light transition-colors"
                 onClick={toggleMenu}
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
