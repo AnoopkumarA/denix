@@ -2,12 +2,12 @@ import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 
 const images = [
-    "/src/assets/images/processimg1.png",
-    "/src/assets/images/processimg2.png",
-    "/src/assets/images/processimg3.png",
-    "/src/assets/images/processimg1.png",
-    "/src/assets/images/processimg2.png",
-    "/src/assets/images/processimg3.png"
+    "/processimg1.png",
+    "/processimg2.png",
+    "/processimg3.png",
+    "/processimg1.png",
+    "/processimg2.png",
+    "/processimg3.png"
 ];
 
 const ProcessSection: React.FC = () => {
@@ -75,7 +75,7 @@ const ProcessSection: React.FC = () => {
                     </div>
                     <div className="md:w-1/2 mt-6 md:mt-0">
                         <motion.img 
-                            src="/src/assets/images/processimg4.png" 
+                            src="/processimg4.png" 
                             alt="Modern wooden kitchen with orange pendant lights" 
                             className="w-full h-auto rounded-md shadow-lg"
                             whileHover={{ scale: 1.05, rotate: 2 }}
