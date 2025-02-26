@@ -54,7 +54,7 @@ const ContactPage: React.FC = () => {
         {/* Left column - Image with hover animations */}
         <div className="w-full md:w-1/3 h-full pb-6 md:pb-0 overflow-hidden rounded-md group">
           <img 
-            src="/src/assets/images/contactimg.png" 
+            src="/contactimg.png" 
             alt="Modern balcony with plants and city view" 
             className="w-full h-full object-cover rounded-md transition-all duration-500 ease-in-out 
                       group-hover:scale-110 group-hover:brightness-110 group-hover:shadow-lg"
