@@ -1,4 +1,4 @@
-import React from "react";
+
 import GridGallery from "./GridGallery";
 
 const images = [
