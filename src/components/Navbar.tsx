@@ -49,6 +49,15 @@ const Navbar = () => {
           <ul className="text-center space-y-8 text-black font-semibold">
             <li>
               <Link
+                to="/"
+                className="text-[2.6rem] hover:italic hover:font-light transition-colors"
+                onClick={toggleMenu}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="/process"
                 className="text-[2.6rem] hover:italic hover:font-light transition-colors"
                 onClick={toggleMenu}
