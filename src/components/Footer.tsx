@@ -1,39 +1,35 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
 
 const Footer = () => {
-    return (
-      <footer className="bg-gray-900 text-white py-6 flex justify-between items-center px-10">
-        {/* Left Side - Navigation */}
-        <ul className="flex space-x-6 text-lg text-gray-300">
-          <li>
-            <Link to="/" className="hover:text-orange-400">Home</Link>
-          </li>
-          <li>
-            <Link to="/process" className="hover:text-orange-400">Process</Link>
-          </li>
-          <li>
-            <Link to="/project" className="hover:text-orange-400">Project</Link>
-          </li>
-          <li>
-            <Link to="/contact" className="hover:text-orange-400">Contact</Link>
-          </li>
-        </ul>
-
-        {/* Center - Logo */}
-        <Link to="/">
+  return (
+    <footer className="bg-gray-900 text-white py-6 px-4 md:px-10">
+      <div className="flex flex-col space-y-6 lg:flex-row lg:space-y-0 lg:justify-between lg:items-center">
+        {/* Logo - Top on mobile, centered on desktop */}
+        <div className="flex justify-center order-first lg:order-2 lg:mx-4">
           <img 
             src="/Echoes Logo.png"
             alt="Echoes Logo"
-            className="w-32 h-auto"
+            className="w-24 h-auto lg:w-32"
           />
-        </Link>
-  
-        {/* Right Side - Copyright */}
-        <p className="text-gray-400 text-sm">
+        </div>
+        
+        {/* Navigation - Horizontal on all devices */}
+        <div className="order-2 lg:order-1">
+          <ul className="flex flex-wrap justify-center gap-4 md:gap-6 text-gray-300 text-sm md:text-base lg:text-lg">
+            <li className="hover:text-orange-400 cursor-pointer">Home</li>
+            <li className="hover:text-orange-400 cursor-pointer">Process</li>
+            <li className="hover:text-orange-400 cursor-pointer">Project</li>
+            <li className="hover:text-orange-400 cursor-pointer">Contact</li>
+          </ul>
+        </div>
+        
+        {/* Copyright - Bottom on all devices */}
+        <p className="text-gray-400 text-xs md:text-sm text-center order-3 lg:order-3">
           Copyright 2025 · Echoes · All Rights Reserved
         </p>
-      </footer>
-    );
-  };
-  
-  export default Footer;
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
