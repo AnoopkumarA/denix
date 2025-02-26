@@ -2,9 +2,9 @@ import React from "react";
 
 const GridGallery = () => {
   return (
-    <div className="grid grid-cols-2 w-full max-w-[54rem]  mx-auto mt-28 mb-16">
+    <div className="grid grid-cols-2 w-full max-w-[64rem]  mx-auto mt-28 mb-16">
       {/* First Text Section */}
-      <div className="bg-gray-300 p-8 flex flex-col justify-center min-h-[300px]">
+      <div className="bg-gray-300 p-8 h-auto flex flex-col justify-center min-h-[300px]">
         <h2 className="font-montaga text-3xl mb-3 leading-tight">
           Transforming Spaces,
           <br />

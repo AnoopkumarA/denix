@@ -1,6 +1,6 @@
 const UniqueProcess = () => {
   return (
-    <div className="relative max-w-5xl mx-auto px-11.5 flex items-center justify-between space-x-10 mt-24">
+    <div className="relative max-w-[67.8rem] mx-auto px-11.5 flex items-center justify-between space-x-10 -mt-16">
       
 
       {/* Left - Large Text */}

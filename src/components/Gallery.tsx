@@ -1,9 +1,9 @@
 const Gallery = () => {
     return (
-      <div className="max-w-[61rem] mx-auto p-6 ">
-        <div className="grid grid-cols-2 gap-4">
+      <div className="max-w-[69rem] h-[52rem] mx-auto p-6">
+        <div className="grid grid-cols-2 gap-[0.4rem] h-full">
           {/* Left Image - Large */}
-          <div className="col-span-1">
+          <div className="col-span-1 h-[38rem]">
             <img
               src="/1.png"
               alt="Modern Balcony"
@@ -12,7 +12,7 @@ const Gallery = () => {
           </div>
   
           {/* Right Column - Two Smaller Images */}
-          <div className="col-span-1 grid grid-rows-2 gap-3.5">
+          <div className="col-span-1 grid grid-rows-2 gap-[0.4rem] h-[38rem]">
             <img
               src="/2.png"
               alt="Cozy Balcony Setup"
@@ -30,4 +30,3 @@ const Gallery = () => {
   };
   
   export default Gallery;
-  
